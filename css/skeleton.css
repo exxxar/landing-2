@@ -35,10 +35,10 @@ polikin.ca
 /* #Base 1200 Grid
 ================================================== */
 
-    .container                                  { position: relative; width: 1200px; margin: 0 auto; padding: 0; }
+    .container                                  { position: relative; width: 1220px; margin: 0 auto; padding: 0; }
     .container .column,
     .container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
-    .row                                        { margin-bottom: 20px; }
+    .row                                        { margin-bottom: 0px; }
 
     /* Nested Column Classes */
     .column.alpha, .columns.alpha               { margin-left: 0; }
@@ -93,7 +93,7 @@ polikin.ca
     /* Note: Design for a width of 768px */
 
     @media only screen and (min-width: 768px) and (max-width: 959px) {
-        .container                                  { width: 768px; }
+        .container                                  { width: 800px; }/* 768px;*/
         .container .one.column,
         .container .one.columns                     { width: 28px; }
         .container .two.columns                     { width: 76px; }
@@ -138,7 +138,7 @@ polikin.ca
 
 	@media only screen and (min-width: 960px) and (max-width: 1199px) {
         /* Base Grid */
-		.container                                  { width: 960px; }
+		.container                                  { width: 980px; } /*960*/
 	    .container .one.column,
 	    .container .one.columns                     { width: 40px;  }
 	    .container .two.columns                     { width: 100px; }
@@ -185,7 +185,7 @@ polikin.ca
     /* Note: Design for a width of 320px */
 
     @media only screen and (max-width: 767px) {
-        .container { width: 300px; }
+        .container { width: 320px; }/*300*/
         .container .columns,
         .container .column { margin: 0; }
 
@@ -235,7 +235,7 @@ polikin.ca
     /* Note: Design for a width of 480px */
 
     @media only screen and (min-width: 480px) and (max-width: 767px) {
-        .container { width: 420px; }
+        .container { width: 440px; }/*420*/
         .container .columns,
         .container .column { margin: 0; }
 
@@ -301,7 +301,7 @@ polikin.ca
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-weight: 300; }
 h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
 h2 { font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; }
@@ -519,7 +519,7 @@ blockquote,
 dl,
 figure,
 table,
-p,
+
 ul,
 ol,
 form {
