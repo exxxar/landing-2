@@ -19,15 +19,16 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/skeleton.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+	<link href="bower_components/lightbox2/src/css/lightbox.css" rel="stylesheet">
+	<link rel="stylesheet" href="bower_components/jquery-modal/jquery.modal.css" type="text/css" media="screen" />
+	
 	<link rel="stylesheet" href="css/style.css">
 	<!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link rel="icon" type="image/png" href="favicon.png"> </head>
-<style>
-	input {
-		width: 100%;
-	}
-</style>
+	<link rel="icon" href="faveicon.png"> </head>
 
 <body>
 	<!-- section-1 -->
@@ -260,7 +261,7 @@
 		<div class="row">
 			<h1>ДАВАЙТЕ СРАВНИМ,<BR>КАК ДЕЛАЕМ СВОЮ РАБОТУ МЫ И ДРУГИЕ</h1>
 			<hr>
-			<div class="row columns fifteen offset-by-one">
+			<div class="columns fifteen offset-by-one">
 				<div class="columns four offset-by-five">
 					<p>ТАК РАБОТАЮТ МНОГИЕ</p>
 				</div>
@@ -271,7 +272,7 @@
 			<div class="row columns fifteen offset-by-one">
 				<div class="columns five">
 					<div class="row">
-						<h1 class="two columns">01/</h1>
+						<h1 class="two columns offset-by-one">01/</h1>
 						<p class="two columns">СОСТАВ
 							<BR>ПРОЕКТА</p>
 					</div>
@@ -288,7 +289,7 @@
 			<div class="row columns fifteen offset-by-one">
 				<div class="columns five">
 					<div class="row">
-						<h1 class="two columns">01/</h1>
+						<h1 class="two columns offset-by-one">02/</h1>
 						<p class="two columns">СОСТАВ
 							<BR>ПРОЕКТА</p>
 					</div>
@@ -305,7 +306,7 @@
 			<div class="row columns fifteen offset-by-one">
 				<div class="columns five">
 					<div class="row">
-						<h1 class="two columns">01/</h1>
+						<h1 class="two columns offset-by-one">03/</h1>
 						<p class="two columns">СОСТАВ
 							<BR>ПРОЕКТА</p>
 					</div>
@@ -322,7 +323,7 @@
 			<div class="row columns fifteen offset-by-one">
 				<div class="columns five">
 					<div class="row">
-						<h1 class="two columns">01/</h1>
+						<h1 class="two columns offset-by-one">04/</h1>
 						<p class="two columns">СОСТАВ
 							<BR>ПРОЕКТА</p>
 					</div>
@@ -339,7 +340,7 @@
 			<div class="row columns fifteen offset-by-one">
 				<div class="columns five">
 					<div class="row">
-						<h1 class="two columns">01/</h1>
+						<h1 class="two columns offset-by-one">05/</h1>
 						<p class="two columns">СОСТАВ
 							<BR>ПРОЕКТА</p>
 					</div>
@@ -356,7 +357,7 @@
 			<div class="row columns fifteen offset-by-one">
 				<div class="columns five">
 					<div class="row">
-						<h1 class="two columns">01/</h1>
+						<h1 class="two columns offset-by-one">06/</h1>
 						<p class="two columns">СОСТАВ
 							<BR>ПРОЕКТА</p>
 					</div>
@@ -373,7 +374,7 @@
 			<div class="row columns fifteen offset-by-one">
 				<div class="columns five">
 					<div class="row">
-						<h1 class="two columns">01/</h1>
+						<h1 class="two columns offset-by-one">07/</h1>
 						<p class="two columns">СОСТАВ
 							<BR>ПРОЕКТА</p>
 					</div>
@@ -390,159 +391,172 @@
 		</div>
 	</section>
 	<!-- section-10 -->
-	<section class="container section-10">
-		<div class="row">
-			<h1>ХОТИТЕ УЗНАТЬ БОЛЬШЕО СВОИХ ВОЗМОЖНОСТЯХ?</h1>
-			<p>Оставьте заявку на бесплатную консультацию, и наш специалист ознакомит вас со всеми
-				<br> подходящими для вас вариантами проектов. </p>
-			<div class="row columns fifteen offset-by-one">
-				<div class="columns three"> <img src="images/garaz.jpg"> </div>
-				<form class="row columns eleven">
-					<div class="row">
-						<input type="text" placeholder="Введите имя..." class="columns three">
-						<input type="text" placeholder="Введите E-mail..." class="columns three">
-						<input type="text" placeholder="Введите телефон..." class="columns three"> </div>
-					<div class="row">
-						<textarea class="columns six"> </textarea>
-						<div class="columns four">
-							<p>текст</p>
-							<button>ЗАДАТЬ ВОПРОС</button>
+	<section class="section-10">
+		<div class="container">
+			<div class="row">
+				<h1>ХОТИТЕ УЗНАТЬ БОЛЬШЕО СВОИХ ВОЗМОЖНОСТЯХ?</h1>
+				<p>Оставьте заявку на бесплатную консультацию, и наш специалист ознакомит вас со всеми
+					<br> подходящими для вас вариантами проектов. </p>
+				<div class="row columns fifteen offset-by-one">
+					<div class="columns three img"> <img src="images/garaz.jpg"> </div>
+					<form class="row columns eleven">
+						<div class="row">
+							<input type="text" placeholder="Введите имя..." class="columns three">
+							<input type="text" placeholder="Введите E-mail..." class="columns three">
+							<input type="text" placeholder="Введите телефон..." class="columns three"> </div>
+						<div class="row">
+							<textarea class="columns six"> </textarea>
+							<div class="columns three">
+								<div class="checkbox">
+									<input type="checkbox" id="isAsccept1" />
+									<label for="isAsccept1">Нажав кнопку "задать вопрос" я даю согласия на обработку моих персональных данных компанией "Дом1год" и согласен условиями публичной оферты. "</label>
+								</div>
+								<button>ЗАДАТЬ ВОПРОС</button>
+							</div>
 						</div>
-					</div>
-				</form>
+					</form>
+				</div>
 			</div>
 		</div>
 	</section>
 	<!-- section-11 -->
-	<section class="container section-11">
-		<div class="row">
-			<h1>Мы - настоящие!</h1>
-			<hr>
-			<p>Возможно, со стороны наша работа выглядит скучной, но мы искренне любим выбранное дело и с головой отдаемся каждому проекту.</p>
-			<ul class="row">
-				<li class="columns four"> <img src="images/x1.jpg"> <img src="images/x2.jpg"> </li>
-				<li class="columns four"> <img src="images/x3.jpg"> <img src="images/x4.jpg"> <img src="images/x5.jpg"> </li>
-				<li class="columns four"> <img src="images/x6.jpg"> <img src="images/x7.jpg"> </li>
-				<li class="columns four"> <img src="images/x8.jpg"> <img src="images/x9.jpg"> <img src="images/x10.jpg"> </li>
-			</ul>
+	<section class="section-11">
+		<div class="container">
+			<div class="row">
+				<h1 class="columns fourteen offset-by-one">Мы - настоящие!</h1>
+				<div class="columns fourteen offset-by-one">
+					<hr> </div>
+				<p class="columns fourteen offset-by-one">Возможно, со стороны наша работа выглядит скучной,
+					<br> но мы искренне любим выбранное дело и с головой отдаемся каждому проекту.</p>
+				<ul class="row">
+					<li class="columns four"> <img src="images/x1.jpg"> <img src="images/x2.jpg"> </li>
+					<li class="columns four"> <img src="images/x3.jpg"> <img src="images/x4.jpg"> <img src="images/x5.jpg"> </li>
+					<li class="columns four"> <img src="images/x6.jpg"> <img src="images/x7.jpg"> </li>
+					<li class="columns four"> <img src="images/x8.jpg"> <img src="images/x9.jpg"> <img src="images/x10.jpg"> </li>
+				</ul>
+			</div>
 		</div>
 	</section>
 	<!-- section-12 -->
-	<section class="container section-12">
-		<div class="row">
-			<h1>ВСЕ ДОКУМЕНТЫ В ПОЛНОМ ПОРЯДКЕ</h1>
-			<hr>
-			<div class="slider-docs row">
-				<div>
-					<a href="img/sert-1.jpg" data-lightbox="image-1" data-title="Выдержка из договора"><img class="perspective" src="img/sert-1.jpg"></a>
-				</div>
-				<div>
-					<a href="img/sert-2.jpg" data-lightbox="image-1" data-title="Выдержка из договора"><img class="perspective" src="img/sert-2.jpg"></a>
-				</div>
-				<div>
-					<a href="img/sert-3.jpg" data-lightbox="image-1" data-title="Выдержка из договора"><img class="perspective" src="img/sert-3.jpg"></a>
-				</div>
-				<div>
-					<a href="img/sert-3.jpg" data-lightbox="image-1" data-title="Выдержка из договора"><img class="perspective" src="img/sert-1.jpg"></a>
+	<section class="section-12">
+		<div class="container">
+			<div class="row">
+				<h1>ВСЕ ДОКУМЕНТЫ В ПОЛНОМ ПОРЯДКЕ</h1>
+				<hr>
+				<div class="slider-docs row">
+					<div>
+						<a href="img/sert-1.jpg" data-lightbox="image-1" data-title="Выдержка из договора"><img class="perspective" src="img/sert-1.jpg"></a>
+					</div>
+					<div>
+						<a href="img/sert-2.jpg" data-lightbox="image-1" data-title="Выдержка из договора"><img class="perspective" src="img/sert-2.jpg"></a>
+					</div>
+					<div>
+						<a href="img/sert-3.jpg" data-lightbox="image-1" data-title="Выдержка из договора"><img class="perspective" src="img/sert-3.jpg"></a>
+					</div>
+					<div>
+						<a href="img/sert-3.jpg" data-lightbox="image-1" data-title="Выдержка из договора"><img class="perspective" src="img/sert-1.jpg"></a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- section-13 -->
-	<section class="container section-13">
-		<div class="row">
-			<h1>ДОПОЛНИТЕЛЬНЫЕ ДОКАЗАТЕЛЬСТВА<BR>НАШЕЙ ЭКСПЕРТНОСТИ</h1>
-			<hr>
-			<div class="row columns fifteen  offset-by-one">
-				<div class="video-present seven columns">
-					<div class="inner"> <img src="img/after.jpg">
-						<div class="shadow">
-							<div class="play"></div>
-						</div>
-					</div>
-				</div>
-				<div class="video-present seven columns">
-					<div class="inner"> <img src="img/after.jpg">
-						<div class="shadow">
-							<div class="play"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row rowWithTitle columns fifteen  offset-by-one">
-				<div class="video-present withTitle seven columns">
-					<div class="title">
-						<p>ПОЛУЧИЛ ИДЕАЛЬНЫЙ ПРОЕКТ ИДЕАЛЬНОГО ДОМА.</p>
-						<hr> </div>
-					<div class="inner"> <img src="img/after.jpg">
-						<div class="shadow">
-							<div class="play"></div>
-						</div>
-						<Div class="control">
-							<div class="btn-play"><i class="fa fa-play" aria-hidden="true"></i></div>
-							<div class="progress">
-								<div class="time-spent">00:01</div>
-								<div class="time-bar">
-									<div class="time-line"></div>
-								</div>
-								<div class="time-max">04:23</div>
+	<section class="section-13">
+		<div class="container">
+			<div class="row">
+				<h1>ДОПОЛНИТЕЛЬНЫЕ ДОКАЗАТЕЛЬСТВА<BR>НАШЕЙ ЭКСПЕРТНОСТИ</h1>
+				<hr>
+				<div class="row columns fifteen  offset-by-one">
+					<div class="video-present seven columns">
+						<div class="inner"> <img src="img/after.jpg">
+							<div class="shadow">
+								<div class="play"></div>
 							</div>
-							<div class="sound">
-								<div class="sound-icon"><i class="fa fa-volume-off" aria-hidden="true"></i></div>
-								<div class="sound-bar">
-									<div class="sound-line"></div>
-								</div>
-							</div>
-							<div class="size"><i class="fa fa-expand" aria-hidden="true"></i></div>
-						</Div>
+						</div>
 					</div>
-				</div>
-				<div class="video-present withTitle seven columns">
-					<div class="title">
-						<p>ПОЛУЧИЛ ИДЕАЛЬНЫЙ ПРОЕКТ ИДЕАЛЬНОГО ДОМА.</p>
-						<hr> </div>
-					<div class="inner"> <img src="img/after.jpg">
-						<div class="shadow">
-							<div class="play"></div>
+					<div class="video-present seven columns">
+						<div class="inner"> <img src="img/after.jpg">
+							<div class="shadow">
+								<div class="play"></div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row rowWithTitle columns fifteen offset-by-one">
-				<div class="video-present withTitle seven columns">
-					<div class="title">
-						<p>ПОЛУЧИЛ ИДЕАЛЬНЫЙ ПРОЕКТ ИДЕАЛЬНОГО ДОМА.</p>
-						<hr> </div>
-					<div class="inner"> <img src="img/after.jpg">
-						<div class="shadow">
-							<div class="play"></div>
+				<div class="row rowWithTitle columns fifteen  offset-by-one">
+					<div class="video-present withTitle seven columns">
+						<div class="title">
+							<p>ПОЛУЧИЛ ИДЕАЛЬНЫЙ ПРОЕКТ ИДЕАЛЬНОГО ДОМА.</p>
+							<hr> </div>
+						<div class="inner"> <img src="img/after.jpg">
+							<div class="shadow">
+								<div class="play"></div>
+							</div>
+							<Div class="control">
+								<div class="btn-play"><i class="fa fa-play" aria-hidden="true"></i></div>
+								<div class="progress">
+									<div class="time-spent">00:01</div>
+									<div class="time-bar">
+										<div class="time-line"></div>
+									</div>
+									<div class="time-max">04:23</div>
+								</div>
+								<div class="sound">
+									<div class="sound-icon"><i class="fa fa-volume-off" aria-hidden="true"></i></div>
+									<div class="sound-bar">
+										<div class="sound-line"></div>
+									</div>
+								</div>
+								<div class="size"><i class="fa fa-expand" aria-hidden="true"></i></div>
+							</Div>
 						</div>
-						<Div class="control">
-							<div class="btn-play"><i class="fa fa-play" aria-hidden="true"></i></div>
-							<div class="progress">
-								<div class="time-spent">00:01</div>
-								<div class="time-bar">
-									<div class="time-line"></div>
-								</div>
-								<div class="time-max">04:23</div>
+					</div>
+					<div class="video-present withTitle seven columns">
+						<div class="title">
+							<p>ПОЛУЧИЛ ИДЕАЛЬНЫЙ ПРОЕКТ ИДЕАЛЬНОГО ДОМА.</p>
+							<hr> </div>
+						<div class="inner"> <img src="img/after.jpg">
+							<div class="shadow">
+								<div class="play"></div>
 							</div>
-							<div class="sound">
-								<div class="sound-icon"><i class="fa fa-volume-off" aria-hidden="true"></i></div>
-								<div class="sound-bar">
-									<div class="sound-line"></div>
-								</div>
-							</div>
-							<div class="size"><i class="fa fa-expand" aria-hidden="true"></i></div>
-						</Div>
+						</div>
 					</div>
 				</div>
-				<div class="video-present withTitle seven columns">
-					<div class="title">
-						<p>ПОЛУЧИЛ ИДЕАЛЬНЫЙ ПРОЕКТ ИДЕАЛЬНОГО ДОМА.</p>
-						<hr> </div>
-					<div class="inner"> <img src="img/after.jpg">
-						<div class="shadow">
-							<div class="play"></div>
+				<div class="row rowWithTitle columns fifteen offset-by-one">
+					<div class="video-present withTitle seven columns">
+						<div class="title">
+							<p>ПОЛУЧИЛ ИДЕАЛЬНЫЙ ПРОЕКТ ИДЕАЛЬНОГО ДОМА.</p>
+							<hr> </div>
+						<div class="inner"> <img src="img/after.jpg">
+							<div class="shadow">
+								<div class="play"></div>
+							</div>
+							<Div class="control">
+								<div class="btn-play"><i class="fa fa-play" aria-hidden="true"></i></div>
+								<div class="progress">
+									<div class="time-spent">00:01</div>
+									<div class="time-bar">
+										<div class="time-line"></div>
+									</div>
+									<div class="time-max">04:23</div>
+								</div>
+								<div class="sound">
+									<div class="sound-icon"><i class="fa fa-volume-off" aria-hidden="true"></i></div>
+									<div class="sound-bar">
+										<div class="sound-line"></div>
+									</div>
+								</div>
+								<div class="size"><i class="fa fa-expand" aria-hidden="true"></i></div>
+							</Div>
+						</div>
+					</div>
+					<div class="video-present withTitle seven columns">
+						<div class="title">
+							<p>ПОЛУЧИЛ ИДЕАЛЬНЫЙ ПРОЕКТ ИДЕАЛЬНОГО ДОМА.</p>
+							<hr> </div>
+						<div class="inner"> <img src="img/after.jpg">
+							<div class="shadow">
+								<div class="play"></div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -550,70 +564,79 @@
 		</div>
 	</section>
 	<!-- section-14 -->
-	<section class="container section-14">
-		<div class="row">
-			<div class="slider-otziv">
-				<div>
-					<div class="left"> <img src="img/krasin.jpg">
-						<ul class="social">
-							<li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href=""><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-							<li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-							<li><a href=""><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>
-						</ul>
+	<section class="section-14">
+		<div class="container">
+			<div class="row">
+				<div class="slider-otziv">
+					<div>
+						<div class="left columns five"> <img src="images/krasin.jpg">
+							<ul class="social">
+								<li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href=""><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+								<li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								<li><a href=""><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+						<div class="right columns ten">
+							<h1>ВИКТОР КРАСИН</h1>
+							<H2>Получил идеальный проект идеального дома.</H2>
+							<hr>
+							<p> Планируя строительство собственного дома, я долго не мог выбрать, что лучше: взять готовый проект или заказать индивидуальный. Решил связаться с представителями нескольких проектных команд, чтобы узнать условия и выбрать лучшие. Лучшие оказались у компании «Дом1год», потому что предложенные их специалистами готовые проекты полностью удовлетворяли моим требованиям и стоили недорого. Сейчас живу с семьей в уже отстроенном доме и искренне рад, что сделал правильным выбор: здесь все продумано для удобной жизни. </p>
+						</div>
 					</div>
-					<div class="right">
-						<h1>ВИКТОР КРАСИН</h1>
-						<H2>Получил идеальный проект идеального дома.</H2>
-						<hr>
-						<p> Планируя строительство собственного дома, я долго не мог выбрать, что лучше: взять готовый проект или заказать индивидуальный. Решил связаться с представителями нескольких проектных команд, чтобы узнать условия и выбрать лучшие. Лучшие оказались у компании «Дом1год», потому что предложенные их специалистами готовые проекты полностью удовлетворяли моим требованиям и стоили недорого. Сейчас живу с семьей в уже отстроенном доме и искренне рад, что сделал правильным выбор: здесь все продумано для удобной жизни. </p>
+					
+					<div>
+						<div class="left columns five"> <img src="images/krasin.jpg">
+							<ul class="social">
+								<li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href=""><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+								<li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								<li><a href=""><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+						<div class="right columns ten">
+							<h1>ВИКТОР КРАСИН</h1>
+							<H2>Получил идеальный проект идеального дома.</H2>
+							<hr>
+							<p> Планируя строительство собственного дома, я долго не мог выбрать, что лучше: взять готовый проект или заказать индивидуальный. Решил связаться с представителями нескольких проектных команд, чтобы узнать условия и выбрать лучшие. Лучшие оказались у компании «Дом1год», потому что предложенные их специалистами готовые проекты полностью удовлетворяли моим требованиям и стоили недорого. Сейчас живу с семьей в уже отстроенном доме и искренне рад, что сделал правильным выбор: здесь все продумано для удобной жизни. </p>
+						</div>
 					</div>
-				</div>
-				<div>
-					<div class="left"> <img src="img/krasin.jpg">
-						<ul class="social">
-							<li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href=""><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-							<li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-							<li><a href=""><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>
-						</ul>
+					
+					<div>
+						<div class="left columns five"> <img src="images/krasin.jpg">
+							<ul class="social">
+								<li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href=""><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+								<li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								<li><a href=""><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+						<div class="right columns ten">
+							<h1>ВИКТОР КРАСИН</h1>
+							<H2>Получил идеальный проект идеального дома.</H2>
+							<hr>
+							<p> Планируя строительство собственного дома, я долго не мог выбрать, что лучше: взять готовый проект или заказать индивидуальный. Решил связаться с представителями нескольких проектных команд, чтобы узнать условия и выбрать лучшие. Лучшие оказались у компании «Дом1год», потому что предложенные их специалистами готовые проекты полностью удовлетворяли моим требованиям и стоили недорого. Сейчас живу с семьей в уже отстроенном доме и искренне рад, что сделал правильным выбор: здесь все продумано для удобной жизни. </p>
+						</div>
 					</div>
-					<div class="right">
-						<h1>ВИКТОР КРАСИН</h1>
-						<H2>Получил идеальный проект идеального дома.</H2>
-						<hr>
-						<p> Планируя строительство собственного дома, я долго не мог выбрать, что лучше: взять готовый проект или заказать индивидуальный. Решил связаться с представителями нескольких проектных команд, чтобы узнать условия и выбрать лучшие. Лучшие оказались у компании «Дом1год», потому что предложенные их специалистами готовые проекты полностью удовлетворяли моим требованиям и стоили недорого. Сейчас живу с семьей в уже отстроенном доме и искренне рад, что сделал правильным выбор: здесь все продумано для удобной жизни. </p>
-					</div>
-				</div>
-				<div>
-					<div class="left"> <img src="img/krasin.jpg">
-						<ul class="social">
-							<li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href=""><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-							<li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-							<li><a href=""><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>
-						</ul>
-					</div>
-					<div class="right">
-						<h1>ВИКТОР КРАСИН</h1>
-						<H2>Получил идеальный проект идеального дома.</H2>
-						<hr>
-						<p> Планируя строительство собственного дома, я долго не мог выбрать, что лучше: взять готовый проект или заказать индивидуальный. Решил связаться с представителями нескольких проектных команд, чтобы узнать условия и выбрать лучшие. Лучшие оказались у компании «Дом1год», потому что предложенные их специалистами готовые проекты полностью удовлетворяли моим требованиям и стоили недорого. Сейчас живу с семьей в уже отстроенном доме и искренне рад, что сделал правильным выбор: здесь все продумано для удобной жизни. </p>
-					</div>
+					
+				
+			
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="container section-15">
-		<div class="row">
-			<h1>ОСТАЛИСЬ ВОПРОСЫ?</h1>
-			<p>Запишитесь на бесплатную консультацию, и наш специалист подробно обо всем расскажет.</p>
-			<form class="row columns sixteen offset-by-two">
-				<input class="columns three" type="text" placeholder="Введите имя...">
-				<input class="columns three" type="email" placeholder="Введите E-mail...">
-				<input class="columns three" type="tel" placeholder="Введите телефон...">
-				<button class="columns three">ОСТАВИТЬ ЗАЯВКУ</button>
-			</form>
+	<section class="section-15">
+		<div class="container ">
+			<div class="row">
+				<h1>ОСТАЛИСЬ ВОПРОСЫ?</h1>
+				<p>Запишитесь на бесплатную консультацию, и наш специалист подробно обо всем расскажет.</p>
+				<form class="row columns sixteen offset-by-two">
+					<input class="columns three" type="text" placeholder="Введите имя...">
+					<input class="columns three" type="email" placeholder="Введите E-mail...">
+					<input class="columns three" type="tel" placeholder="Введите телефон...">
+					<button class="columns three">ОСТАВИТЬ ЗАЯВКУ</button>
+				</form>
+			</div>
 		</div>
 	</section>
 	<!-- End Document
