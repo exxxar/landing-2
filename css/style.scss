@@ -285,6 +285,12 @@ button {
 				}
 			}
 		}
+		
+		 @media only screen and (max-width: 767px) {
+			 input {
+				width:100%;	 
+			 }
+		}
 	}
 }
 
@@ -307,8 +313,11 @@ button {
 		@include hr(1,
 		50);
 		margin-left: 5px;
+		width:50%;
 	}
 	.item {
+		
+		
 		h6 {
 			font-size: 13pt;
 			color: $blue;
@@ -323,6 +332,9 @@ button {
 				position: absolute;
 			}
 		}
+		img {
+			width: 100%;
+		}
 	}
 	@for $i from 2 through 9 {
 		.item:nth-child( #{ $i}) {
@@ -332,6 +344,41 @@ button {
 			margin-top: 21px * $i;
 		}
 	}
+	@media only screen and (max-width: 959px) and (min-width: 768px) {
+		.two.columns {
+			width:200px;
+		}
+		
+		.one.columns {
+			display: none;
+			
+		}
+	}
+	@media only screen and (max-width: 767px) {
+		.two.columns {
+			width:210px;
+		}
+		.one.columns {
+			display: none;
+			
+		}
+		
+		@for $i from 1 through 9 {
+		.item:nth-child( #{ $i}) {
+			margin-top: 0px;
+			img {
+				margin-left:40px;
+				width: 130px;
+			}
+			
+			@if $i==9 {
+				margin-left:100px;
+			}
+		}
+		
+	}
+		}
+	
 }
 
 .section-4 {
