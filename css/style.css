@@ -712,23 +712,98 @@ button {
       border: none;
       margin: 50px auto;
       background: #211061; }
-  .section-9 .body .index {
-    background-color: #f3f3f7; }
-    .section-9 .body .index h1 {
-      color: #ff8e00;
-      font-family: 'OpenSansSemiBold'; }
-  .section-9 .body .other {
+  .section-9 .head p {
+    color: #211061;
+    font-size: 16pt;
     text-align: center;
-    padding: 10px;
-    box-sizing: border-box; }
-    .section-9 .body .other p {
-      font-size: 12pt;
-      color: #211061;
-      text-align: center; }
-      .section-9 .body .other p strong {
-        font-family: 'OpenSansSemiBold'; }
-  .section-9 .body .we {
-    text-align: center; }
+    font-weight: bold; }
+  .section-9 .head > div:nth-child(1) > p {
+    border-bottom: 1px lightgray solid; }
+  .section-9 .head > div:nth-child(2) > p {
+    border-bottom: 1px #ff8e00 solid; }
+  .section-9 .body {
+    margin-bottom: 10px; }
+    .section-9 .body .index {
+      background-color: #f3f3f7;
+      height: 125px;
+      box-sizing: border-box;
+      padding-top: 15px; }
+      .section-9 .body .index h1 {
+        color: #ff8e00;
+        width: 20%;
+        font-family: 'OpenSansSemiBold';
+        text-align: left;
+        padding-left: 40px; }
+      .section-9 .body .index p {
+        font-size: 14pt;
+        color: #211061;
+        line-height: 120%;
+        padding-top: 23px;
+        font-weight: bold; }
+    .section-9 .body .index-1 {
+      height: 240px;
+      padding-top: 80px; }
+    .section-9 .body .other {
+      text-align: center;
+      box-sizing: border-box; }
+      .section-9 .body .other p {
+        font-size: 14pt;
+        color: #211061;
+        text-align: center; }
+        .section-9 .body .other p strong {
+          font-family: 'OpenSansSemiBold'; }
+    .section-9 .body .we {
+      text-align: center;
+      padding: 10px;
+      box-sizing: border-box; }
+      .section-9 .body .we p {
+        font-size: 13pt;
+        color: #211061;
+        text-align: left; }
+      .section-9 .body .we:hover {
+        box-shadow: 2px 2px 2px 2px lightgray; }
+  .section-9 .body-1 .other {
+    padding-top: 40px; }
+  .section-9 .body-1 .other {
+    padding-top: 40px; }
+  .section-9 .body-1 .we {
+    padding-top: 20px; }
+  .section-9 .body-2 .other {
+    padding-top: 40px; }
+  .section-9 .body-2 .we {
+    padding-top: 20px; }
+  .section-9 .body-3 .other {
+    padding-top: 40px; }
+  .section-9 .body-3 .we {
+    padding-top: 20px; }
+  .section-9 .body-4 .other {
+    padding-top: 40px; }
+  .section-9 .body-4 .we {
+    padding-top: 20px; }
+  .section-9 .body-4 .index p {
+    padding-top: 30px; }
+  .section-9 .body-5 .other {
+    padding-top: 40px; }
+  .section-9 .body-5 .we {
+    padding-top: 20px; }
+  .section-9 .body-5 .we {
+    padding-top: 30px; }
+  .section-9 .body-5 .index p {
+    padding-top: 30px; }
+  .section-9 .body-6 .other {
+    padding-top: 40px; }
+  .section-9 .body-6 .we {
+    padding-top: 20px; }
+  .section-9 .body-6 .index p {
+    padding-top: 10px; }
+  .section-9 .body-7 .other {
+    padding-top: 40px; }
+  .section-9 .body-7 .we {
+    padding-top: 20px; }
+  .section-9 .body-7 .we {
+    padding-top: 40px; }
+  .section-9 .body-7 .index p {
+    padding-top: 30px; }
   @media only screen and (max-width: 959px) and (min-width: 768px) {
     .section-9 h1 {
       line-height: 150%;
@@ -781,11 +856,27 @@ button {
         font-style: italic; }
     .section-9 .body .we {
       height: 200px; }
+      .section-9 .body .we:hover {
+        box-shadow: none; }
       .section-9 .body .we:after {
         content: 'Tak rabotem mi';
         font-size: 12pt;
         color: #ff8e00;
-        font-style: italic; } }
+        font-style: italic; }
+    .section-9 .body-1 .index p {
+      padding-top: 0px; }
+    .section-9 .body-2 .index p {
+      padding-top: 0px; }
+    .section-9 .body-3 .index p {
+      padding-top: 0px; }
+    .section-9 .body-4 .index p {
+      padding-top: 0px; }
+    .section-9 .body-5 .index p {
+      padding-top: 0px; }
+    .section-9 .body-6 .index p {
+      padding-top: 0px; }
+    .section-9 .body-7 .index p {
+      padding-top: 0px; } }
 
 .section-10 {
   background: #211061;
