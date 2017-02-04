@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(fonts.css);
 li {
   list-style: none; }
@@ -995,7 +996,7 @@ button {
       .section-9 .body .other p {
         text-align: center; }
       .section-9 .body .other:after {
-        content: 'Tak rabotaut mnogie';
+        content: 'ТАК РАБОТАЮТ МНОГИЕ';
         font-size: 12pt;
         color: #ff8e00;
         font-style: italic; }
@@ -1006,7 +1007,7 @@ button {
       .section-9 .body .we:hover {
         box-shadow: none; }
       .section-9 .body .we:after {
-        content: 'Tak rabotem mi';
+        content: 'ТАК РАБОТАЕМ МЫ';
         font-size: 12pt;
         color: #ff8e00;
         font-style: italic; }

@@ -1,4 +1,4 @@
-@import 'fonts.css';
+﻿@import 'fonts.css';
 $orange:#ff8e00;
 $blue:#211061;
 $black:#3d3d3d;
@@ -1044,7 +1044,7 @@ button {
 					text-align: center;
 				}
 				&:after {
-					content: 'Tak rabotaut mnogie';
+					content: 'ТАК РАБОТАЮТ МНОГИЕ';
 					font-size: 12pt;
 					color: $orange;
 					font-style: italic;
@@ -1059,7 +1059,7 @@ button {
 					box-shadow: none;
 				}
 				&:after {
-					content: 'Tak rabotem mi';
+					content: 'ТАК РАБОТАЕМ МЫ';
 					font-size: 12pt;
 					color: $orange;
 					font-style: italic;
