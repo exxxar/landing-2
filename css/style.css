@@ -723,12 +723,8 @@ button {
     .section-8 .container .four.columns {
       width: 30%; } }
   @media only screen and (max-width: 1000px) and (min-width: 768px) {
-    .section-8 .container .four.columns {
-      width: 100%; }
-    .section-8 .container {
-      width: 100%; }
-    .section-8 br {
-      display: none; } }
+    .section-8 button {
+      font-size: 7pt; } }
   @media only screen and (max-width: 767px) {
     .section-8 br {
       display: none; } }
@@ -1462,7 +1458,8 @@ button {
   background: url("../images/arr-prew-w.png") center no-repeat; }
 
 @media (max-width: 768px) {
-  .slick-next, .slick-prev {
+  .slick-next,
+  .slick-prev {
     display: none !important; } }
 
 /*# sourceMappingURL=style.css.map */

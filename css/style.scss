@@ -14,10 +14,7 @@ li {
 body {
 	font: 12px/18px 'OpenSansRegular', sans-serif;
 	width: 100%;
-	
 }
-
-
 
 :focus {
 	outline: none;
@@ -651,7 +648,6 @@ button {
 					border: 1px lightgray solid;
 					.shadow {
 						width: 360px;
-						
 					}
 				}
 			}
@@ -740,15 +736,8 @@ button {
 		}
 	}
 	@media only screen and (max-width: 1000px) and (min-width: 768px) {
-		.container .four.columns {
-			width: 100%;
-		}
-		
-		.container {
-			width:100%;
-		}
-		br {
-			display: none;
+		button {
+			font-size: 7pt;
 		}
 	}
 	@media only screen and (max-width: 767px) {
@@ -1033,7 +1022,7 @@ button {
 				background-color: transparent;
 				border-bottom: 1px $orange solid;
 				height: 170px;
-				padding-top:10px;
+				padding-top: 10px;
 				h1 {
 					font-size: 42pt;
 					text-align: center;
@@ -1049,7 +1038,6 @@ button {
 					}
 				}
 			}
-
 			.other {
 				height: 100px;
 				p {
@@ -1082,21 +1070,18 @@ button {
 			.body-#{$i} {
 				@if $i==1 {
 					.other {
-						height:200px;
+						height: 200px;
 					}
-					
 					.we {
-						height:250px;
+						height: 250px;
 					}
 				}
-				
-					@if $i==6 {
+				@if $i==6 {
 					.other {
-						height:150px;
+						height: 150px;
 					}
-					
 					.we {
-						height:250px;
+						height: 250px;
 					}
 				}
 				.index p {
@@ -1682,10 +1667,9 @@ button {
 	background: url('../images/arr-prew-w.png') center no-repeat;
 }
 
-
 @media (max-width: 768px) {
- 
-	.slick-next, .slick-prev {
+	.slick-next,
+	.slick-prev {
 		display: none !important;
 	}
 }
