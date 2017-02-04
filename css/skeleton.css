@@ -35,7 +35,7 @@ polikin.ca
 /* #Base 1200 Grid
 ================================================== */
 
-    .container                                  { position: relative; width: 1220px; margin: 0 auto; padding: 0; }
+    .container                                  { position: relative; width: 1220px; margin: 0 auto; padding: 0; 	}
     .container .column,
     .container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
     .row                                        { margin-bottom: 0px; }
@@ -92,8 +92,8 @@ polikin.ca
 
     /* Note: Design for a width of 768px */
 
-    @media only screen and (min-width: 768px) and (max-width: 959px) {
-        .container                                  { width: 800px; }/* 768px;*/
+    @media only screen and (min-width: 768px) and (max-width: 999px) {
+        .container                                  { width: 768px; }/* 768px;*/
         .container .one.column,
         .container .one.columns                     { width: 28px; }
         .container .two.columns                     { width: 76px; }
@@ -136,9 +136,9 @@ polikin.ca
 	/* Note: Design for a width 1024 Desktop
 	================================================== */
 
-	@media only screen and (min-width: 960px) and (max-width: 1199px) {
+	@media only screen and (min-width: 1000px) and (max-width: 1199px) {
         /* Base Grid */
-		.container                                  { width: 980px; } /*960*/
+		.container                                  { width: 980px;  } /*960*/
 	    .container .one.column,
 	    .container .one.columns                     { width: 40px;  }
 	    .container .two.columns                     { width: 100px; }
@@ -185,7 +185,7 @@ polikin.ca
     /* Note: Design for a width of 320px */
 
     @media only screen and (max-width: 767px) {
-        .container { width: 320px; }/*300*/
+        .container { width: 320px; overflow: hidden; }/*300*/
         .container .columns,
         .container .column { margin: 0; }
 
@@ -235,7 +235,7 @@ polikin.ca
     /* Note: Design for a width of 480px */
 
     @media only screen and (min-width: 480px) and (max-width: 767px) {
-        .container { width: 440px; }/*420*/
+        .container { width: 440px; overflow: hidden; }/*420*/
         .container .columns,
         .container .column { margin: 0; }
 
@@ -321,12 +321,16 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 }
 
 @media (max-width: 549px) {
-  h1 { font-size: 3.0rem !important; }
-  h2 { font-size: 2.2rem !important; }
-  h3 { font-size: 1.6rem !important; }
-  h4 { font-size: 1.3rem !important; }
+  h1 { font-size: 2.0rem !important; }
+  h2 { font-size: 1.6rem !important; }
+  h3 { font-size: 1.2rem !important; }
+  h4 { font-size: 1.1rem !important; }
   h5 { font-size: 1.1rem !important; }
   h6 { font-size: 1.1rem !important; }
+	
+	.slick-next, .slick-prev {
+		display: none;
+	}
 }
 
 p {
