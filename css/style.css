@@ -996,7 +996,7 @@ button {
       .section-9 .body .other p {
         text-align: center; }
       .section-9 .body .other:after {
-        content: 'ТАК РАБОТАЮТ МНОГИЕ';
+        content: '╨в╨Р╨Ъ ╨а╨Р╨С╨Ю╨в╨Р╨о╨в ╨Ь╨Э╨Ю╨У╨Ш╨Х';
         font-size: 12pt;
         color: #ff8e00;
         font-style: italic; }
@@ -1007,7 +1007,7 @@ button {
       .section-9 .body .we:hover {
         box-shadow: none; }
       .section-9 .body .we:after {
-        content: 'ТАК РАБОТАЕМ МЫ';
+        content: '╨в╨Р╨Ъ ╨а╨Р╨С╨Ю╨в╨Р╨Х╨Ь ╨Ь╨л';
         font-size: 12pt;
         color: #ff8e00;
         font-style: italic; }
@@ -1462,5 +1462,71 @@ button {
   .slick-next,
   .slick-prev {
     display: none !important; } }
+.modal h1 {
+  font-family: 'OpenSansSemiBold';
+  font-size: 24pt;
+  line-height: 150%;
+  color: #211061;
+  text-align: center; }
+  .modal h1 b {
+    font-family: 'OpenSansSemiBold'; }
+.modal h6 {
+  font-family: 'OpenSansLight';
+  font-size: 18pt;
+  line-height: 115%;
+  color: #211061;
+  text-align: center; }
+.modal form {
+  padding-top: 30px; }
+  .modal form input {
+    background: white;
+    border: 1px #211061 solid;
+    margin-bottom: 10px;
+    width: 100%;
+    color: #211061; }
+    .modal form input::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: #211061; }
+    .modal form input::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #211061; }
+    .modal form input:-ms-input-placeholder {
+      /* IE 10+ */
+      color: #211061; }
+    .modal form input:-moz-placeholder {
+      /* Firefox 18- */
+      color: #211061; }
+  .modal form .row {
+    width: 260px;
+    position: relative;
+    margin: auto; }
+    .modal form .row button {
+      width: 260px;
+      height: 55px;
+      font-family: 'OpenSansSemiBold';
+      box-sizing: border-box;
+      text-align: center;
+      color: white;
+      font-size: 10pt;
+      background: #e2e2e2;
+      background: -moz-linear-gradient(top, #ffaf00 50%, #ff8f00 70%, #ff6e00 100%);
+      background: -webkit-linear-gradient(top, #ffaf00 50%, #ff8f00 70%, #ff6e00 100%);
+      background: -o-linear-gradient(top, #ffaf00 50%, #ff8f00 70%, #ff6e00 100%);
+      background: -ms-linear-gradient(top, #ffaf00 50%, #ff8f00 70%, #ff6e00 100%);
+      background: linear-gradient(top, #ffaf00 50%, #ff8f00 70%, #ff6e00 100%);
+      border: 1px black solid;
+      cursor: pointer;
+      border-radius: 0px; }
+      .modal form .row button:active {
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.59);
+        transform: translateY(2px);
+        -webkit-transform: translateY(2px);
+        -moz-transform: translateY(2px);
+        -o-transform: translateY(2px);
+        -ms-transform: translateY(2px);
+        transition: .3s; }
+      .modal form .row button A {
+        text-decoration: none;
+        color: white; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,4 @@
-﻿@import 'fonts.css';
+@import 'fonts.css';
 $orange:#ff8e00;
 $blue:#211061;
 $black:#3d3d3d;
@@ -1671,5 +1671,45 @@ button {
 	.slick-next,
 	.slick-prev {
 		display: none !important;
+	}
+}
+
+.modal {
+	h1 {
+		font-family: 'OpenSansSemiBold';
+		font-size: 24pt;
+		line-height: 150%;
+		color: $blue;
+		text-align: center;
+		b {
+			font-family: 'OpenSansSemiBold';
+		}
+	}
+	h6 {
+		font-family: 'OpenSansLight';
+		font-size: 18pt;
+		line-height: 115%;
+		color: $blue;
+		text-align: center;
+	}
+	form {
+		padding-top: 30px;
+		input {
+			background: white;
+			@include placeholder($blue);
+			border: 1px $blue solid;
+			margin-bottom: 10px;
+			width: 100%;
+			color: $blue;
+		}
+		.row {
+			width: 260px;
+			position: relative;
+			margin: auto;
+			button {
+				@include button(260px,
+				55px);
+			}
+		}
 	}
 }
