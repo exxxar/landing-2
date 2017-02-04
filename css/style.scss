@@ -2,6 +2,9 @@
 $orange:#ff8e00;
 $blue:#211061;
 $black:#3d3d3d;
+li {
+    list-style: none;
+}
 * a {
     text-decoration: none;
     color: $blue;
@@ -9,6 +12,9 @@ $black:#3d3d3d;
 body {
     font: 12px/18px 'OpenSansRegular', sans-serif;
     width: 100%;
+}
+section {
+    overflow-x: hidden;
 }
 :focus {
     outline: none;
@@ -258,6 +264,23 @@ button {
             }
             input {
                 @include input();
+            }
+        }
+        @media only screen and (max-width: 1199px) and (min-width: 960px) {
+            & {
+                form > .row {
+                    padding-left: 0px;
+                    input {
+                        width: 100%;
+                    }
+                }
+                @for $i from 1 through 5 {
+                    .columns:nth-child( #{ $i}) {
+                        margin-left: 30px;
+                        width: 45%;
+                        height: 80px;
+                    }
+                }
             }
         }
         @media only screen and (max-width: 959px) and (min-width: 768px) {
@@ -876,7 +899,6 @@ button {
             }
             .we {
                 height: 200px;
-                
                 &:hover {
                     box-shadow: none;
                 }
@@ -888,13 +910,12 @@ button {
                 }
             }
         }
-        
-         @for $i from 1 through 7 {
-        .body-#{$i} {
-            .index p {
-                padding-top: 0px;
-            }   
-             }
+        @for $i from 1 through 7 {
+            .body-#{$i} {
+                .index p {
+                    padding-top: 0px;
+                }
+            }
         }
     }
 }
@@ -970,7 +991,21 @@ button {
     }
     @media only screen and (max-width: 1199px) and (min-width: 960px) {}
     @media only screen and (max-width: 959px) and (min-width: 768px) {}
-    @media only screen and (max-width: 767px) {}
+    @media only screen and (max-width: 767px) {
+        & {
+            h1 {
+                font-size: 24pt;
+            }
+            form {
+                input {
+                    margin-bottom: 10px !important;
+                }
+                textarea {
+                    margin-bottom: 10px !important;
+                }
+            }
+        }
+    }
 }
 .section-11 {
     padding: 110px 0px 110px 0px;
@@ -1007,15 +1042,155 @@ button {
     @media only screen and (max-width: 767px) {}
 }
 .section-12 {
-    padding: 85px 0px 10px 0px;
+    padding: 85px 0px 20px 0px;
+    background-color: #e8e7ef;
+    h1 {
+        line-height: 100%;
+        font-size: 42pt;
+        font-family: 'OpenSansSemiBold';
+        color: $orange;
+        text-align: center;
+        & + hr {
+            @include hr(4,
+            69);
+            margin: 50px auto;
+        }
+    }
+    .slider-docs {
+        .slick-slide {
+            padding: 30px;
+            box-sizing: border-box;
+            width: 100%;
+            box-sizing: border-box;
+            img {
+                width: 100%;
+                box-shadow: 0px 5px 10px 0px lightgrey;
+            }
+        }
+        & > div {}
+    }
     @media only screen and (max-width: 1199px) and (min-width: 960px) {}
     @media only screen and (max-width: 959px) and (min-width: 768px) {}
     @media only screen and (max-width: 767px) {}
 }
 .section-13 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    h1 {
+        line-height: 100%;
+        font-size: 42pt;
+        font-family: 'OpenSansSemiBold';
+        color: $orange;
+        text-align: center;
+        & + hr {
+            @include hr(4,
+            69);
+            margin: 50px auto;
+        }
+    }
+    .video-present {
+        width: 505px;
+        height: 283px;
+        float: left;
+        padding: 10px;
+        border: 1px white solid;
+        margin-top: 10px;
+        .inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            &:hover {
+                .shadow {
+                    height: 283px;
+                    background: rgba(33, 16, 97, 0.8);
+                }
+            }
+            .control {
+                width: 480px;
+                border-radius: 5px;
+                background: rgba(0, 0, 0, 0.4);
+                height: 30px;
+                position: absolute;
+                bottom: 80px;
+                left: 8px;
+                display: none;
+                .btn-play,
+                .progress,
+                .sound,
+                .size {
+                    float: left;
+                    color: rgba(255, 255, 255, 1);
+                    /* padding: 0px 7px 0px 7px; */
+                    text-align: center;
+                    height: 30px;
+                    line-height: 250%;
+                    border-right: 1px rgba(255, 255, 255, 0.8) solid;
+                }
+                .btn-play {
+                    width: 30px;
+                }
+                .progress {
+                    width: 365px;
+                }
+            }
+            .shadow {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 0px;
+                width: 505px;
+                overflow: hidden;
+                .play {
+                    width: 54px;
+                    height: 68px;
+                    background: url('../images/play.png') center no-repeat;
+                    position: relative;
+                    margin: 107px auto;
+                    &:active {
+                        transform: translateY(2px);
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+        &:hover {
+            border: 1px #efefef solid;
+        }
+    }
+    .withTitle {
+        height: 350px;
+        .title {
+            width: 100%;
+            height: 65px;
+            p {
+                color: $blue;
+                font-size: 14pt;
+                text-align: center;
+                font-family: 'OpenSansSemiBold';
+            }
+            p + hr {
+                width: 69px;
+                height: 1px;
+                background: $orange;
+                margin: 20px auto;
+                border: none;
+            }
+        }
+    }
     @media only screen and (max-width: 1199px) and (min-width: 960px) {}
     @media only screen and (max-width: 959px) and (min-width: 768px) {}
-    @media only screen and (max-width: 767px) {}
+    @media only screen and (max-width: 767px) {
+        
+        h1 {
+                font-size: 26pt;
+            & + hr {
+                margin-top:10px;
+                margin-bottom: 10px;
+            }
+        }
+    }
 }
 .section-14 {
     background: #e8e7ef;
@@ -1097,7 +1272,31 @@ button {
     }
     @media only screen and (max-width: 1199px) and (min-width: 960px) {}
     @media only screen and (max-width: 959px) and (min-width: 768px) {}
-    @media only screen and (max-width: 767px) {}
+    @media only screen and (max-width: 767px) {
+        & {
+            .slider-otziv > div {
+                .left {
+                    img {
+                        padding: 0px 91px 10px 91px;
+                        box-sizing: border-box;
+                    }
+                    ul {
+                        padding: 0px 85px 0px;
+                        box-sizing: border-box;
+                    }
+                }
+                
+                .right {
+                    p {
+                            font-size: 10pt;
+                    }
+                    h1  {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
 }
 .section-15 {
     background: $blue;
@@ -1128,8 +1327,31 @@ button {
         }
     }
     @media only screen and (max-width: 1199px) and (min-width: 960px) {}
-    @media only screen and (max-width: 959px) and (min-width: 768px) {}
-    @media only screen and (max-width: 767px) {}
+    @media only screen and (max-width: 959px) and (min-width: 768px) {
+        & {
+            form > .row {
+                padding-left: 0px;
+                input {
+                    width: 100%;
+                }
+            }
+            @for $i from 1 through 5 {
+                .columns:nth-child( #{ $i}) {
+                    width: 350px;
+                    height: 80px;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        h1 {
+                font-size: 26pt;
+        }
+        input {
+            width: 100%;
+            margin-bottom: 20px !important;
+        }
+    }
 }
 .slick-next {
     right: -50px;
